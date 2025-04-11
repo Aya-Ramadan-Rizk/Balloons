@@ -1,0 +1,502 @@
+/* /////////////////////////////////////////////////// */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/* ///////////////////////////////////////// */
+.parent{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.sky-sun{
+    animation: sky-sun 11s ease 3s forwards;
+}
+@keyframes sky-sun{
+    0%{
+        width: 100%;
+    }
+    20%{
+        width: 100%;
+    }
+    100%{
+        width: 0;
+    }
+}
+.sky-moon{
+    animation: sky-moon 11s ease;
+}
+@keyframes sky-moon{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+/* ///////////////////////////////////////// */
+.sky-moon{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: -webkit-linear-gradient(#0d1b2a , #1e2a47 , #2c3e56);
+}
+.star,.moon{
+    position: absolute;
+}
+.moon{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(#d8d8d8,#b0b0b0,#585858);
+    top: 50px;
+    left: 50px;
+    box-shadow: 1px 2px 50px 20px #a9c7d2;
+}
+.star{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: -webkit-radial-gradient(#ffffff,#f2f2f2,#e6e6e6);
+}
+.star-start{
+    animation: starstart 1s ease-in infinite;
+}
+@keyframes starstart{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.star-end{
+    animation: starend 1s ease-in infinite;
+}
+@keyframes starend{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.star-1{
+    top: 150px;
+    left: 370px;
+}
+.star-2{
+    top: 130px;
+    left: 540px;
+}
+.star-3{
+    top: 180px;
+    left: 700px;
+}
+.star-4{
+    top: 230px;
+    left: 1200px;
+}
+.star-5{
+    top: 270px;
+    left: 1000px;
+}
+.star-6{
+    top: 250px;
+    left: 500px;
+}
+.star-7{
+    top: 100px;
+    left: 840px;
+}
+.star-8{
+    top: 100px;
+    left: 1140px;
+}
+.star-9{
+    top: 120px;
+    left: 1300px;
+}
+.star-10{
+    top: 170px;
+    left: 1450px;
+}
+/* ----------------------- */
+.sky-sun{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: -webkit-linear-gradient(#ff5e13,#ff9a3c,#ffd166,#ff6b6b);
+}
+.cloud,.sun{
+    position: absolute;
+}
+.sun{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(#ff6347,#ff4500,#ff1493);
+    top: 50px;
+    left: 50px;
+    box-shadow: 1px 2px 50px 20px #ffe4e166;
+}
+.cloud{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: -webkit-radial-gradient(#fbe8d3,#dccce3);
+    box-shadow: 2px 2px 8px 2px rgba(244, 240, 248, 0.3);
+}
+.cloud-1{
+    top: 120px;
+    left: 370px;
+}
+.cloud-2{
+    top: 90px;
+    left: 440px;
+}
+.cloud-3{
+    top: 130px;
+    left: 520px;
+}
+.cloud-4{
+    top: 150px;
+    left: 440px;
+}
+.cloud-5{
+    top: 130px;
+    left: 970px;
+}
+.cloud-6{
+    top: 110px;
+    left: 880px;
+}
+.cloud-7{
+    top: 60px;
+    left: 950px;
+}
+.cloud-8{
+    top: 90px;
+    left: 1040px;
+}
+.cloud-9{
+    top: 80px;
+    left: 1320px;
+}
+.cloud-10{
+    top: 120px;
+    left: 1400px;
+}
+.cloud-11{
+    top: 40px;
+    left: 1400px;
+}
+.cloud-12{
+    top: 10px;
+    left: 750px;
+}
+.cloud-13{
+    top: 15px;
+    left: 670px;
+}
+/* ----------------------- */
+/* /////////////////////////////////////////////////// */
+.Balloons{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    animation: Balloons-1 2s linear;
+    left: 250px;
+}
+@keyframes Balloons-1{
+    0%{
+        scale: 20;
+        top: 700px;
+        opacity: 1;
+        background: url(../images/صوره\ للعديد\ من\ البالونات-1-مفرغه.png) center /cover;
+    }
+    50%{
+        top: 350px;
+        background: url(../images/صوره\ للعديد\ من\ البالونات-1-مفرغه.png) center /cover;
+        opacity: 0.9;
+    }
+    100%{
+        scale: 10;
+        top: 0;
+        opacity: 0;
+        background: url(../images/صوره\ للعديد\ من\ البالونات-1-مفرغه.png) center /cover;
+    }
+}
+/* //////////////////////////////////////////// */
+.plus{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    animation: plus 2s linear 3s forwards;
+    background: url(../images/صوره\ لعلامة\ زائد-2.png) center /cover;
+    visibility: hidden;
+}
+@keyframes plus{
+    0%{
+        top: 290px;
+        left: 1300px;
+        visibility: visible;
+    }
+    100%{
+        top: 440px;
+        left: 470px;
+        visibility: visible;
+    }
+}
+.equals{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: equals 2s linear 5s forwards;
+    background: url(../images/صوره\ لعلامة\ يساوي-1.png) center /cover;
+    visibility: hidden;
+}
+@keyframes equals{
+    0%{
+        top: 290px;
+        left: 1300px;
+        visibility: visible;
+    }
+    100%{
+        top: 440px;
+        left: 1000px;
+        visibility: visible;
+    }
+}
+.Balloon-1{
+    width: 150px;
+    height: 170px;
+    position: absolute;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: Balloon-1 2s linear 7s forwards;
+    background: url(../images/صوره\ لبالون\ أحمر-2.png) center /cover;
+    visibility: hidden;
+}
+@keyframes Balloon-1{
+    0%{
+        top: 290px;
+        left: 20px;
+        visibility: visible;
+    }
+    100%{
+        top: 430px;
+        left: 290px;
+        visibility: visible;
+    }
+}
+.Balloon-2{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: Balloon-2 2s linear 17s forwards;
+    background: url(../images/صوره\ لبالون\ أخضر-1.png) center /cover;
+    visibility: hidden;
+}
+@keyframes Balloon-2{
+    0%{
+        top: 290px;
+        left: 190px;
+        visibility: visible;
+    }
+    100%{
+        top: 420px;
+        left: 570px;
+        visibility: visible;
+    }
+}
+.Balloon-3{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: Balloon-3 2s linear 13s forwards;
+    background: url(../images/صوره\ لبالون\ ذهبي-1.png) center /cover;
+    visibility: hidden;
+}
+@keyframes Balloon-3{
+    0%{
+        top: 290px;
+        left: 360px;
+        visibility: visible;
+    }
+    100%{
+        top: 430px;
+        left: 810px;
+        visibility: visible;
+    }
+}
+.Balloon-4{
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: Balloon-4 2s linear 9s forwards;
+    background: url(../images/صوره\ لبالون\ أزرق-1.png) center /cover;
+    visibility: hidden;
+}
+@keyframes Balloon-4{
+    0%{
+        top: 290px;
+        left: 530px;
+        visibility: visible;
+    }
+    100%{
+        top: 440px;
+        left: 680px;
+        visibility: visible;
+    }
+}
+.Balloon-5{
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: Balloon-5 2s linear 21s forwards;
+    background: url(../images/صوره\ لبالون\ أحمر-3.png) center /cover;
+    visibility: hidden;
+}
+@keyframes Balloon-5{
+    0%{
+        top: 290px;
+        left: 700px;
+        visibility: visible;
+    }
+    100%{
+        top: 420px;
+        left: 170px;
+        visibility: visible;
+    }
+}
+.number-2{
+    width: 150px;
+    height: 210px;
+    position: absolute;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: number-2 2s linear 11s;
+    background: url(../images/صوره\ لبالون\ برقم\ 2-1.png) center /cover;
+    visibility: hidden;
+}
+@keyframes number-2{
+    0%{
+        top: 290px;
+        left: 700px;
+        visibility: visible;
+    }
+    85%{
+        top: 400px;
+        left: 1110px;
+    }
+    99%{
+        top: 400px;
+        left: 1110px;
+    }
+    100%{
+        top: 400px;
+        left: 1110px;
+    }
+}
+.number-3{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: number-3 2s linear 15s;
+    background: url(../images/صوره\ لبالون\ برقم3-1.png) center /cover;
+    visibility: hidden;
+}
+@keyframes number-3{
+    0%{
+        top: 290px;
+        left: 700px;
+        visibility: visible;
+    }
+    85%{
+        top: 430px;
+        left: 1120px;
+    }
+    99%{
+        top: 430px;
+        left: 1120px;
+    }
+    100%{
+        top: 430px;
+        left: 1120px;
+    }
+}
+.number-4{
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: number-4 2s linear 19s;
+    background: url(../images/صوره\ لبالون\ برقم\ 4-1.png) center /cover;
+    visibility: hidden;
+
+}
+@keyframes number-4{
+    0%{
+        top: 290px;
+        left: 700px;
+        visibility: visible;
+    }
+    85%{
+        top: 390px;
+        left: 1130px;
+    }
+    99%{
+        top: 390px;
+        left: 1130px;
+    }
+    100%{
+        top: 390px;
+        left: 1130px;
+    }
+}
+.number-5{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: number-5 2s linear 23s forwards;
+    background: url(../images/صوره\ لبالون\ برقم\ 5-1.png) center /cover;
+    visibility: hidden;
+}
+@keyframes number-5{
+    0%{
+        top: 290px;
+        left: 700px;
+        visibility: visible;
+    }
+    0.5%{
+        top: 290px;
+        left: 700px;
+    }
+    85%{
+        top: 370px;
+        left: 1120px;
+    }
+    99%{
+        top: 370px;
+        left: 1120px;
+    }
+    100%{
+        top: 370px;
+        left: 1120px;
+        visibility: visible;
+    }
+}
